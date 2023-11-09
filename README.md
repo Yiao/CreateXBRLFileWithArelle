@@ -1,4 +1,6 @@
 # Create XBRL File with Arelle
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/arelle-release)](https://pypi.org/project/arelle-release/)
+
 Code example how to create XBRL file with Arelle
 
 Here I just use Arelle to Create a XBRL file with the HelloWorld.xsd file
