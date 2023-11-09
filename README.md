@@ -1,4 +1,7 @@
 # Create XBRL File with Arelle
+
+### arelle-release 2.17.2
+
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/arelle-release)](https://pypi.org/project/arelle-release/)
 
 Code example how to create XBRL file with Arelle
