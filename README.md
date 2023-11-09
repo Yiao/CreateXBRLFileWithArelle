@@ -11,8 +11,11 @@ Here I just use Arelle to Create a XBRL file with the HelloWorld.xsd file
    ```
    pip install arelle-release
    ```
-   
-3. You can run the main.py to test it and It'll create the file 
+   If you got the issue with pip, here's the pip site
+   ```
+   https://pip.pypa.io/en/stable/installation/
+   ```
+4. You can run the main.py to test it and It'll create the file 
    ```
     ysu_xbrl_generation_test.xbrl
    ```
