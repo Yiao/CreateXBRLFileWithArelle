@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema
+  attributeFormDefault="unqualified"
+  elementFormDefault="qualified"
+  targetNamespace="http://xbrl.squarespace.com/HelloWorld"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:HelloWorld="http://xbrl.squarespace.com/HelloWorld"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <import
+      namespace="http://www.xbrl.org/2003/instance"
+      schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+    <element
+      name="Land"
+      substitutionGroup="xbrli:item"
+      type="xbrli:monetaryItemType"
+      xbrli:periodType="instant"/>
+    <element
+      name="BuildingsNet"
+      substitutionGroup="xbrli:item"
+      type="xbrli:monetaryItemType"
+      xbrli:periodType="instant"/>
+    <element
+      name="FurnitureAndFixturesNet"
+      substitutionGroup="xbrli:item"
+      type="xbrli:monetaryItemType"
+      xbrli:periodType="instant"/>
+    <element
+      name="ComputerEquipmentNet"
+      substitutionGroup="xbrli:item"
+      type="xbrli:monetaryItemType"
+      xbrli:periodType="instant"/>
+    <element
+      name="OtherPropertyPlantAndEquipmentNet"
+      substitutionGroup="xbrli:item"
+      type="xbrli:monetaryItemType"
+      xbrli:periodType="instant"/>
+    <element
+      name="PropertyPlantAndEquipmentNet"
+      substitutionGroup="xbrli:item"
+      type="xbrli:monetaryItemType"
+      xbrli:periodType="instant"/>
+</schema>
