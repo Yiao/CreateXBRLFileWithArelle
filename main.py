@@ -1,23 +1,22 @@
-## Create a new Arelle controller
 from datetime import datetime
 
 from arelle import XbrlConst, Cntlr, ModelXbrl
 from arelle.ModelValue import qname
 
-## Init the controller
+# Init the controller
 controller = Cntlr.Cntlr()
-## Set to True to work offline
+# Set to True to work offline
 controller.webCache.workOffline = True
-#
-## Load a taxonomy (custom or predefined) for your XBRL instance
+
+# Load a taxonomy (custom or predefined) for your XBRL instance
 taxonomyFile = "HelloWorld.xsd"
 instance = ModelXbrl.load(controller.modelManager, taxonomyFile)
 
-## Create instance and fill up the instance
+# Create instance and fill up the instance
 outputFile = "ysu_xbrl_generation_test.xbrl"
 instance.createInstance(outputFile)
 
-## Create context
+# Create context
 periodStartStr = '09/19/22 13:55:26'
 periodStart = datetime.strptime(periodStartStr, '%m/%d/%y %H:%M:%S')
 periodEndStr = '09/19/22 13:59:26'
@@ -50,9 +49,9 @@ for element_name in elements:
     instance.createFact(element_qname, attributes=monetaryAttr, text="9999")
 print(f"Save instance to {instance.facts}")
 
-# Create a new XBRL instance
+# Save the XBRL instance
 instance.saveInstance()
 print(f"Save instance to {outputFile}")
-## Close the Arelle controller
+# Close the Arelle controller
 controller.close()
 print(f"XBRL instance saved to {outputFile}")
