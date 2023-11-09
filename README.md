@@ -3,7 +3,7 @@ Code example how to create XBRL file with Arelle
 
 Here I just use Arelle to Create a XBRL file with the HelloWorld.xsd file
 
-1. You need to install the python 3 in your PC/MAC
+1. You need to install the python 3 in your PC/MAC, I use Python 3.9.6
    ```
    https://www.python.org/downloads/
    ```
